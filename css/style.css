@@ -86,6 +86,7 @@ main {
 /* o nas */
 .about-us-info {
 	margin-bottom: 10px;
+	padding: 0 20px;
 }
 
 /* produkty */
@@ -93,44 +94,32 @@ main {
 	margin: 60px auto;
 }
 
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
 .product h3 {
 	text-transform: uppercase;
 }
 
 .first-product {
-	position: relative;
-	height: 300px;
 	background-image: url("../img/children-593313_640.jpg");
-	background-size: cover;
-	background-position: center;
-	text-align: center;
 }
 
 .second-product {
-	position: relative;
-	height: 300px;
 	background-image: url("../img/keyboard-70506_640.jpg");
-	background-size: cover;
-	background-position: center;
-	text-align: center;
 }
 
 .third-product {
-	position: relative;
-	height: 300px;
 	background-image: url("../img/woman-1851464_640.jpg");
-	background-size: cover;
-	background-position: center;
-	text-align: center;
 }
 
 .fourth-product {
-	position: relative;
-	height: 300px;
 	background-image: url("../img/laptop-1483974_640.jpg");
-	background-size: cover;
-	background-position: center;
-	text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -166,6 +155,21 @@ main {
 
 	.hero-text p {
 		font-size: 18px;
+	}
+
+	.product h3 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+
+	.product {
+		display: inline-block;
+		width: 50%;
 	}
 }
 
